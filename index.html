@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabby Z | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">GZ Data</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <h1>Data Analyst | Real Estate & Investment Analytics</h1>
+    <p>SQL sorcery, Python pipelines, BI dashboards, and high-impact real estate datasets.</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I'm a data analyst with a specialized focus on tech-enabled real estate analytics.  
+        Graduate of a data analyst accelerator program, I turn unruly datasets into structured  
+        insights that guide acquisitions, investor decisions, and operational performance.  
+        I love transforming warehouses of raw data into dashboards that feel like they were  
+        built by a future version of you.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Stack</h2>
+    <div class="skill-grid">
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">Tableau</div>
+        <div class="skill-card">Power BI</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Portfolio Projects</h2>
+    <div id="project-container" class="project-grid"></div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your-email@gmail.com">your-email@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR-LINK">linkedin.com/in/YOUR-LINK</a></p>
+    <p>GitHub: <a href="https://github.com/gabbyzuck">github.com/gabbyzuck</a></p>
+</section>
+
+<script>
+    // Dynamically load projects from JSON
+    fetch("projects.json")
+        .then(res => res.json())
+        .then(data => {
+            const container = document.getElementById("project-container");
+            data.forEach(p => {
+                container.innerHTML += `
+                    <div class="project-card">
+                        <h3>${p.title}</h3>
+                        <p>${p.description}</p>
+                        <a href="${p.link}" target="_blank">View Project</a>
+                    </div>
+                `;
+            });
+        });
+</script>
+
+</body>
+</html>

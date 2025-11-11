@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Commerical Real Estate Investor Matchmaker",
+        "description": "A matching engine that aligns investors with industrial real estate opportunities using their return goals, risk tolerance, and strategy preferences. Produced ranked recommendations and clear decision-support.",
+        "link": "https://github.com/YOUR-REPO"
+    },
+    {
+        "title": "Medical Insurance Cost Analysis",
+        "description": "Explored how demographic and lifestyle variables influence medical insurance expenses through cleaning, preprocessing, visual analysis, and regression modeling.",
+        "link": "https://github.com/YOUR-REPO"
+    },
+    {
+        "title": "Miami Real Estate + Macro Dashboard",
+        "description": "An interactive dashboard combining Redfin API for housing data and FRED API for macro indicators to identify Miami residential trends that precede commercial real estate shifts.",
+        "link": "https://github.com/YOUR-REPO"
+    }
+]
